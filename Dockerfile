@@ -14,4 +14,4 @@ RUN chgrp -R root /etc/nginx /var/cache/nginx /var/run /var/log/nginx && \
 
 EXPOSE 8080
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["sudo", "nginx", "-g", "daemon off;"]
