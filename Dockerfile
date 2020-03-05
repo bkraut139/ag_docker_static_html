@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-LABEL maintainer="ReliefMelone"
+LABEL maintainer="Boris Krauthaker"
 
 WORKDIR /app
 COPY . .
