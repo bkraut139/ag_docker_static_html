@@ -2,8 +2,8 @@ FROM nginx:alpine
 
 LABEL maintainer="Boris Krauthaker"
 
-WORKDIR /app
-COPY . .
+#WORKDIR /app
+#COPY . .
 
 # Configure NGINX
 #COPY ./openshift/nginx/nginx.conf /etc/nginx/nginx.conf
