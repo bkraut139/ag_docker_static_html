@@ -17,3 +17,7 @@ WORKDIR /usr/share/nginx/html
 RUN addgroup nginx root
 USER nginx
 
+STOPSIGNAL SIGTERM
+
+CMD ["nginx", "-g", "daemon off;"]
+
