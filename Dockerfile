@@ -5,11 +5,6 @@ LABEL maintainer="Boris Krauthaker"
 WORKDIR /app
 COPY . .
 
-# Install node.js
-RUN apk update && \
-    apk add nodejs npm python make curl g++
-
-
 # Configure NGINX
 COPY ./openshift/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./openshift/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
